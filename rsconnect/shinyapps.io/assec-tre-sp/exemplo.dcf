@@ -1,0 +1,12 @@
+name: exemplo
+title: exemplo
+username: assec-tre-sp
+account: assec-tre-sp
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11249121
+bundleId:
+url: https://assec-tre-sp.shinyapps.io/exemplo/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
