@@ -7,7 +7,7 @@
 app_server <- function(input, output, session) {
   # Your application server logic
   dados_pls <- read.csv2(
-    app_sys("/inst/dados_pls.csv")
+    app_sys("dados_pls.csv")
   )
 
   output$grafico <- renderPlot({
