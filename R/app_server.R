@@ -7,11 +7,17 @@
 app_server <- function(input, output, session) {
   # Your application server logic
   dados_pls <- read.csv2(
-    here::here("inst", "dados_pls.csv")
+    app_sys("dados_pls.csv")
   )
 
   output$grafico <- renderPlot({
    plot(dados_pls$ca)
+  })
+
+  output$tabela <- reactable::renderReactable({
+    dados_pls |>
+      dplyr::select(ca) |>
+      reactable::reactable()
   })
 
 }
